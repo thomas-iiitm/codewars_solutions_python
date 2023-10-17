@@ -8,3 +8,6 @@ def to_camel_case(text):
     for i in range(1,len(temp)):
         res.append(temp[i].capitalize())
     return ''.join(res)
+
+def to_camel_case2(text):
+    return text[:1] + text.title()[1:].replace('_', '').replace('-', '')
